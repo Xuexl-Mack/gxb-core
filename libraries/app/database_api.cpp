@@ -284,6 +284,11 @@ uint64_t database_api::get_account_count()const
    return my->get_account_count();
 }
 
+uint64_t database_api::get_entry_count()const
+{
+   return my->get_entry_count();
+}
+
 uint64_t database_api::get_asset_count() const
 {
    return my->get_asset_count();

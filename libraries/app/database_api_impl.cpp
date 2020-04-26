@@ -924,6 +924,11 @@ uint64_t database_api_impl::get_account_count() const
    return _db.get_index_type<account_index>().indices().size();
 }
 
+uint64_t database_api_impl::get_entry_count() const
+{
+   return _db.get_index_type<trx_entry_index>().indices().size();
+}
+
 uint64_t database_api_impl::get_asset_count() const
 {
    return _db.get_index_type<asset_index>().indices().size();

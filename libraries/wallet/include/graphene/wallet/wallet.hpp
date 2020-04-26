@@ -520,6 +520,8 @@ class wallet_api
        */
       uint64_t                          get_account_count()const;
 
+      uint64_t                          get_entry_count()const;
+
       /** Returns the number of assets registered on the blockchain
        * @returns the number of registered assets
        */
@@ -2280,6 +2282,7 @@ FC_API( graphene::wallet::wallet_api,
         (get_block_by_id)
         (get_commission_percent)
         (get_account_count)
+        (get_entry_count)
         (get_asset_count)
         (get_account_history)
         (get_account_history_by_operations)
